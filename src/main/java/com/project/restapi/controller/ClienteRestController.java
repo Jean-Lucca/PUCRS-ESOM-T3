@@ -1,6 +1,7 @@
 package com.project.restapi.controller;
 
 import com.project.restapi.entity.Cliente;
+import com.project.restapi.entity.ClienteDTO;
 import com.project.restapi.service.ClienteService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,13 +34,19 @@ public class ClienteRestController {
 	}
 
 	@PostMapping
-	public ResponseEntity<Cliente> inserir(@RequestBody Cliente cliente) {
+	public ResponseEntity<Cliente> inserir(@RequestBody ClienteDTO clienteDto) {
+		Cliente cliente=new Cliente();
+		cliente.setNome(clienteDto.getNome());
+		cliente.setEndereco(clienteDto.getEndereco());
 		clienteService.inserir(cliente);
 		return ResponseEntity.ok(cliente);
 	}
 
 	@PutMapping("/{id}")
-	public ResponseEntity<Cliente> atualizar(@PathVariable Long id, @RequestBody Cliente cliente) {
+	public ResponseEntity<Cliente> atualizar(@PathVariable Long id, @RequestBody ClienteDTO clienteDto) {
+		Cliente cliente=new Cliente();
+		cliente.setNome(clienteDto.getNome());
+		cliente.setEndereco(clienteDto.getEndereco());
 		clienteService.atualizar(id, cliente);
 		return ResponseEntity.ok(cliente);
 	}
