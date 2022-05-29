@@ -1,22 +1,21 @@
-
 @startuml
 
 
 
 title Cliente Rest API
 
-node "Presentation"{
+node "Presentation Layer"{
   component Swagger-UI as SUI{
   }
 }
 
-frame "Service Layer"{
+node "Service Layer"{
   component ClienteServiceImpl as SVC {
   }
 }
 
 
-node  "Controller"{
+node  "Controller Layer"{
   SUI - [ClienteRestController]
 }
 
