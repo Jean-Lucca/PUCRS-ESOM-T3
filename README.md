@@ -5,8 +5,13 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Jean-Lucca_PUCRS-ESOM-T3&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Jean-Lucca_PUCRS-ESOM-T3)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Jean-Lucca_PUCRS-ESOM-T3&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Jean-Lucca_PUCRS-ESOM-T3)
 
-Repositorio destinado ao desenvolvimento do trabalho 3 de engenharia de software orientada a modelos
-
+## Descrição da Aplicação
+API Rest desenvolvida utilizando o Spring Framework, consistente na implementação das operações CRUD(create, reduce, update, delete), alem disso foi criado um cliente HTTP utilizando Spring Cloud OpenFeign para consumo da API do viaCEP.
+#### Objetivos
+- Configuração do analisador de código
+- No mínimo três decisões arquiteturais
+- No mínimo três modelos
+- Aplicação de padrões de projeto
 ## Architecture Overview
 
 ## Presentation Layer
@@ -27,3 +32,4 @@ Repositorio destinado ao desenvolvimento do trabalho 3 de engenharia de software
 - Testes - JUnit 5
 - Arquitetura - Camadas
 - Backend - Spring
+- Independência de banco de dados
