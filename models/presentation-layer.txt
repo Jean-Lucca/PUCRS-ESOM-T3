@@ -1,3 +1,4 @@
+
 @startuml
 
 
@@ -10,7 +11,7 @@ node "Presentation"{
 }
 
 frame "Service Layer"{
-  component ServiceLayer as SVC {
+  component ClienteServiceImpl as SVC {
   }
 }
 
