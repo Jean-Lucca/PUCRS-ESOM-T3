@@ -1,0 +1,29 @@
+@startuml
+
+
+
+title Cliente Rest API
+
+node "Presentation"{
+  component Swagger-UI as SUI{
+  }
+}
+
+frame "Service Layer"{
+  component ServiceLayer as SVC {
+  }
+}
+
+
+node  "Controller"{
+  SUI - [ClienteRestController]
+}
+
+component SpringFactory as FC{
+}
+
+
+[ClienteRestController] <--> FC : ClienteDTO 
+FC <--> SVC : ClienteDTO
+
+@enduml
