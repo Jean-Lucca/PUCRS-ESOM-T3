@@ -13,7 +13,7 @@ API Rest desenvolvida utilizando o Spring Framework, consistente na implementaç
 - No mínimo três modelos
 - Aplicação de padrões de projeto
 ## Architecture Overview
-
+![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/overview.png)
 ## Presentation Layer
 ![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/presentation-layer.png)
 ## Controller Layer
