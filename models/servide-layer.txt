@@ -1,0 +1,32 @@
+@startuml
+
+
+
+title Cliente Rest API
+
+node "Controller Layer"{
+  component "clienteController"{
+  }
+}
+
+node "Repository Layer" as RL{
+  component "clienteRepository"{
+  }
+  component "enderecoRepository"{
+  }
+}
+
+node "Service Layer"{
+  component "clienteServiceImpl"{
+  }
+}
+
+frame "(external API) viacep" as VCA{
+}
+clienteController <--> clienteServiceImpl : ClienteDTO
+[OpenFeign] -> clienteServiceImpl : Endereco
+[OpenFeign] <- clienteServiceImpl : CEP
+VCA <- [OpenFeign] : CEP
+VCA -> [OpenFeign] : Endereco
+clienteServiceImpl <--> RL : Cliente
+@enduml
