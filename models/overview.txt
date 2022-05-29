@@ -1,0 +1,38 @@
+
+@startuml
+
+
+
+title Cliente Rest API
+
+node "Presentation Layer" as PTL{
+  component "Swagger-UI"{
+  }
+}
+
+node "Service Layer" as SL{
+  component "ClienteService" {
+  }
+  component "ViaCEPService" {
+  }
+}
+
+
+node  "Controller Layer" as CL{
+  component "ClienteRestController"{
+  }
+}
+
+node "Persistency layer" as PSL{
+  component "ClienteRepository"{
+  }
+  component "EnderecoRepository"{
+  }
+}
+
+
+PTL --> CL
+CL  --> SL
+SL  --> PSL
+
+@enduml
