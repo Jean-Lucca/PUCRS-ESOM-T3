@@ -28,8 +28,6 @@ API Rest desenvolvida utilizando o Spring Framework, consistente na implementaç
 - Strategy - Interface ClienteService
 - Repository - Spring @Repository
 ## Decisões Arquiteturais
-- Implementação - Java 
-- Testes - JUnit 5
-- Arquitetura - Camadas
-- Backend - Spring
-- Independência de banco de dados
+- Implementamos em Java com backend Spring, o que torna o projeto portabilidade com vários dispositivos.
+- Os testes foram feitos com o JUnit 5, por isso ele é confiável.
+- O SonarCloud garante manutenabilidade, segurança e confiabilidade.
