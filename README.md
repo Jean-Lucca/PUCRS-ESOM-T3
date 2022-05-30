@@ -18,13 +18,14 @@ API Rest desenvolvida utilizando o Spring Framework, consistente na implementaç
 ![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/presentation-layer.png)
 ## Controller Layer
 
+## Camadas
+![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/camadas.png)
+
 ## Service Layer
 ![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/service-layer-fixed.png)
 
 ## Persistency Layer
 ![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/Persist%C3%AAncia.png)
-
-![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/camadas.png)
 
 ## Design Patterns
 - Facade - ClienteRestController
