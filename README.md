@@ -17,6 +17,7 @@ API Rest desenvolvida utilizando o Spring Framework, consistente na implementaç
 ## Presentation Layer
 ![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/presentation-layer.png)
 ## Controller Layer
+![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/Controller%20Layer.png)
 
 ## Camadas
 ![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/camadas.png)
