@@ -24,6 +24,8 @@ API Rest desenvolvida utilizando o Spring Framework, consistente na implementaç
 ## Persistency Layer
 ![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/Persist%C3%AAncia.png)
 
+![alt text](https://github.com/Jean-Lucca/PUCRS-ESOM-T3/blob/main/models/camadas.png)
+
 ## Design Patterns
 - Facade - ClienteRestController
 - Singleton - Spring @Autowired
