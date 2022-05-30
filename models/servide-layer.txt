@@ -4,19 +4,19 @@
 
 title Cliente Rest API
 
-node "Controller Layer"{
+package "Controller Layer"{
   component "clienteController"{
   }
 }
 
-node "Repository Layer" as RL{
+package "Repository Layer" as RL{
   component "clienteRepository"{
   }
   component "enderecoRepository"{
   }
 }
 
-node "Service Layer"{
+package "Service Layer"{
   component "clienteServiceImpl"{
   }
 }

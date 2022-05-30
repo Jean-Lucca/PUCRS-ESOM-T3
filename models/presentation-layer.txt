@@ -4,18 +4,18 @@
 
 title Cliente Rest API
 
-node "Presentation Layer"{
+package "Presentation Layer"{
   component Swagger-UI as SUI{
   }
 }
 
-node "Service Layer"{
+package "Service Layer"{
   component ClienteServiceImpl as SVC {
   }
 }
 
 
-node  "Controller Layer"{
+package  "Controller Layer"{
   SUI - [ClienteRestController]
 }
 
